@@ -2,12 +2,14 @@ using System.Net.Mail;
 using System.Net;
 using System;
 using System.Text;
+using Iscapop.ViewModel;
 
 namespace Iscapop.Page;
 
 public partial class LoginPage : Base.BasePage
 {
     private Random random = new Random();
+    
 
     public LoginPage()
 	{

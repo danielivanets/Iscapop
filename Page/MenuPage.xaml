@@ -2,36 +2,37 @@
 <Base:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Base="clr-namespace:Iscapop.Base"
-             x:Class="Iscapop.Page.WelcomePage"
-             Title="WelcomePage">
-
+             x:Class="Iscapop.Page.MenuPage"
+             Title="MenuPage">
         <ScrollView>
-
             <StackLayout>
 
-                <Label Text="Bienvenido a mi aplicación Iscapop"
-                   HorizontalOptions="Center"
-                   FontSize="38"
-                   FontAttributes="Bold"/>
+                <Label Text="Menu" FontSize="30"  TextColor="BlueViolet" HorizontalOptions="Center"/>
 
-                <Button Text="Iniciar Sesión"
+                <Button Text="Perfil"
                         FontSize="20"
                         FontAttributes="Bold"
                         BackgroundColor="#111111"
                         TextColor="White"
                         Margin="0,20,0,0"
-                        Clicked="OnLoginClicked"/>
+                        Clicked="OnPerfilClicked"/>
 
-                <Button Text="Registrarse"
+                <Button Text="Material"
                         FontSize="20"
                         FontAttributes="Bold"
                         BackgroundColor="#111111"
                         TextColor="White"
                         Margin="0,20,0,0"
-                        Clicked="OnRegisterClicked"/>
+                        Clicked="OnMaterialClicked"/>
 
-
-
+                <Button Text="Buscar"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        BackgroundColor="#111111"
+                        TextColor="White"
+                        Margin="0,20,0,0"
+                        Clicked="OnBuscarClicked"/>
             </StackLayout>
         </ScrollView>
+
 </Base:BasePage>

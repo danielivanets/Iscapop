@@ -5,14 +5,14 @@
                x:Class="Iscapop.Page.LoginPage"
                Title="Login up" >
 
-    <VerticalStackLayout Spacing="20" Margin="20">
+    <VerticalStackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="20" Margin="20">
         <!-- Sección de correo electrónico -->
-        <Label Text="Correo electrónico:" FontSize="20" />
+        <Label Text="Correo electrónico:" FontSize="20" TextColor="BlueViolet"/>
         <Entry x:Name="txtCorreo" Placeholder="Introduce tu correo electrónico" />
         <Button Text="Enviar código" Clicked="clickEnviarCodigo" />
 
         <!-- Sección de código de validación -->
-        <Label Text="Código de validación:" FontSize="20" />
+        <Label Text="Código de validación:" FontSize="20" TextColor="BlueViolet"/>
         <Entry x:Name="txtCodigo" Placeholder="Introduce el código de validación" />
         <Button Text="Validar" Clicked="clickValidarCorreo" />
     </VerticalStackLayout>
