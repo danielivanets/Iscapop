@@ -8,14 +8,32 @@ namespace Iscapop.Model
     {
         private int _id;
         [AutoIncrement, PrimaryKey]
-        public int Id { 
-            get { return _id; } 
-            set { SetProperty(ref _id, value); } 
+        public int Id
+        {
+            get { return _id; }
+            set { SetProperty(ref _id, value); }
         }
 
-        public String nombre { get; set; }
-        public String path { get; set; }
-        public byte[] foto { get; set; }
+        private string _nombre;
+        public string Nombre
+        {
+            get { return _nombre; }
+            set { SetProperty(ref _nombre, value); }
+        }
+
+        private string _path;
+        public string Path
+        {
+            get { return _path; }
+            set { SetProperty(ref _path, value); }
+        }
+
+        private byte[] _foto;
+        public byte[] foto
+        {
+            get { return _foto; }
+            set { SetProperty(ref _foto, value); }
+        }
 
         //relacion con material
         [ForeignKey(typeof(Material))]
