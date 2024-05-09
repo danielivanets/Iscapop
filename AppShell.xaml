@@ -8,8 +8,8 @@
     Title="Iscapop">
 
     <ShellContent
-        Title="WelcomePage"
-        ContentTemplate="{DataTemplate Page:WelcomePage}"
-        Route="WelcomePage" />
+    Title="Welcome"
+    ContentTemplate="{DataTemplate Page:WelcomePage}"
+    Route="WelcomePage" />
 
 </Shell>

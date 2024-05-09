@@ -2,7 +2,7 @@ namespace Iscapop.Page;
 
 public partial class MenuPage : Base.BasePage
 {
-	public MenuPage():base()
+	public MenuPage()
 	{
 		InitializeComponent();
 	}

@@ -15,7 +15,6 @@ namespace Iscapop.Model
         }
 
         private string _email;
-        [NotNull]
         public string Email
         {
             get { return _email; }
@@ -30,13 +29,18 @@ namespace Iscapop.Model
         }
 
         private string _password;
-        [NotNull]
         public string Password
         {
             get { return _password; }
             set { SetProperty(ref _password, value); }
         }
 
+        private string _nom;
+        public string Nom 
+        { 
+            get { return _nom; } 
+            set { SetProperty(ref _nom, value); } 
+        }
 
         private DateTime _momento; //momento en que se envio el codigo para la doble validacion
         public DateTime Momento

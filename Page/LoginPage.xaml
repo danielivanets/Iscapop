@@ -3,18 +3,24 @@
                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:Base="clr-namespace:Iscapop.Base"
                x:Class="Iscapop.Page.LoginPage"
-               Title="Login up" >
+               Title="Login up">
 
-    <VerticalStackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="20" Margin="20">
+    <StackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+
         <!-- Sección de correo electrónico -->
-        <Label Text="Correo electrónico:" FontSize="20" TextColor="BlueViolet"/>
+        <Label Text="Correo electrónico:" FontSize="20" />
+
         <Entry x:Name="txtCorreo" Placeholder="Introduce tu correo electrónico" />
-        <Button Text="Enviar código" Clicked="clickEnviarCodigo" />
+
+        <Button Text="Enviar código" Clicked="clickEnviarCodigo" BackgroundColor="#007AFF" />
 
         <!-- Sección de código de validación -->
-        <Label Text="Código de validación:" FontSize="20" TextColor="BlueViolet"/>
+        <Label Text="Código de validación:" FontSize="20" />
+
         <Entry x:Name="txtCodigo" Placeholder="Introduce el código de validación" />
-        <Button Text="Validar" Clicked="clickValidarCorreo" />
-    </VerticalStackLayout>
+
+        <Button Text="Validar" Clicked="clickValidarCorreo" BackgroundColor="#007AFF" />
+
+    </StackLayout>
 
 </Base:BasePage>

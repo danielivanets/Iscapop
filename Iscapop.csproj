@@ -66,11 +66,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Dao\" />
-	</ItemGroup>
-
-	<ItemGroup>
+	  <MauiXaml Update="Page\LoginConfirmPasswordPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Page\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page\LoginWithPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Page\MenuPage.xaml">

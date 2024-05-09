@@ -9,11 +9,11 @@ public partial class WelcomePage : Base.BasePage
 
     private async void OnLoginClicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
+        await Shell.Current.GoToAsync(nameof(LoginWithPasswordPage));
     }
 
-    private void OnRegisterClicked(object sender, EventArgs e)
+    private async void OnRegisterClicked(object sender, EventArgs e)
     {
-
+        await Shell.Current.GoToAsync(nameof(LoginPage));
     }
 }

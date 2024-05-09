@@ -5,9 +5,9 @@
              x:Class="Iscapop.Page.MenuPage"
              Title="MenuPage">
         <ScrollView>
-            <StackLayout>
+            <StackLayout VerticalOptions="Center">
 
-                <Label Text="Menu" FontSize="30"  TextColor="BlueViolet" HorizontalOptions="Center"/>
+                <Label Text="Menu" FontSize="30" HorizontalOptions="Center"/>
 
                 <Button Text="Perfil"
                         FontSize="20"

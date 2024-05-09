@@ -6,8 +6,7 @@
              Title="WelcomePage">
 
         <ScrollView>
-
-            <StackLayout>
+            <StackLayout VerticalOptions="Center">
 
                 <Label Text="Bienvenido a mi aplicación Iscapop"
                    HorizontalOptions="Center"
@@ -29,8 +28,6 @@
                         TextColor="White"
                         Margin="0,20,0,0"
                         Clicked="OnRegisterClicked"/>
-
-
 
             </StackLayout>
         </ScrollView>
